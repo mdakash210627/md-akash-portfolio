@@ -6,24 +6,24 @@ const contacts = [
 {
 icon:"📧",
 title:"Email",
-value:"your-email@example.com",
-link:"mailto:your-email@example.com"
+value:"mdakashmiya0827@gmail.com",
+link:"mailto:mdakashmiya0827@gmail.com"
 },
 
 
 {
 icon:"💻",
 title:"GitHub",
-value:"GitHub Profile",
-link:"#"
+value:"Md Akash Miya",
+link:"https://github.com/mdakash210627"
 },
 
 
 {
 icon:"🔗",
 title:"LinkedIn",
-value:"LinkedIn Profile",
-link:"#"
+value:"Md Akash",
+link:"https://www.linkedin.com/in/md-akash-178192326/"
 },
 
 
@@ -31,7 +31,7 @@ link:"#"
 icon:"🎓",
 title:"Google Scholar",
 value:"Research Profile",
-link:"#"
+link:"https://scholar.google.com/citations?user=wGM6W8kAAAAJ&hl=en"
 }
 
 ];

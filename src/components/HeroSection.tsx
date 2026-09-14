@@ -6,6 +6,7 @@ import NeuralNetwork from "./NeuralNetwork";
 
 export default function HeroSection() {
   return (
+
     <section
       className="
       relative
@@ -13,17 +14,16 @@ export default function HeroSection() {
       flex
       flex-col
       justify-center
-      px-6
-      pt-28
-      pb-20
+      px-5
+      sm:px-6
+      pt-24
+      pb-16
       overflow-hidden
       "
     >
 
       <AIBrainBackground />
 
-
-      {/* Hero Content */}
 
       <div
         className="
@@ -33,22 +33,31 @@ export default function HeroSection() {
         w-full
         mx-auto
         grid
+        grid-cols-1
         lg:grid-cols-3
-        gap-12
+        gap-10
+        lg:gap-12
         items-center
-        "
+        " 
       >
 
 
         {/* Profile Image */}
 
-        <div className="flex justify-center">
+        <div
+          className="
+          flex
+          justify-center
+          "
+        >
 
           <div
             className="
             relative
-            w-64
-            h-64
+            w-48
+            h-48
+            sm:w-56
+            sm:h-56
             lg:w-72
             lg:h-72
             rounded-full
@@ -74,6 +83,7 @@ export default function HeroSection() {
 
           </div>
 
+
         </div>
 
 
@@ -82,10 +92,9 @@ export default function HeroSection() {
 
         {/* Personal Information */}
 
-
         <div
           className="
-          space-y-5
+          space-y-4
           text-center
           lg:text-left
           "
@@ -95,7 +104,7 @@ export default function HeroSection() {
           <h1
             className="
             text-4xl
-            md:text-5xl
+            sm:text-5xl
             font-bold
             text-gray-900
             "
@@ -105,9 +114,11 @@ export default function HeroSection() {
 
 
 
+
           <h2
             className="
-            text-3xl
+            text-2xl
+            sm:text-3xl
             font-semibold
             text-blue-600
             "
@@ -120,27 +131,32 @@ export default function HeroSection() {
 
           <p
             className="
-            text-lg
+            text-base
+            sm:text-lg
             leading-relaxed
             text-gray-600
             "
           >
+
             Researching Artificial Intelligence, Deep Learning,
             Computer Vision, Biomedical Imaging, Signal Processing
             and Explainable AI for real-world applications.
+
           </p>
+
 
 
 
 
           <div
             className="
-            mt-6
-            space-y-3
+            mt-5
+            space-y-2
+            text-sm
+            sm:text-base
             text-gray-700
             "
           >
-
 
             <p>
               🎓 B.Sc. Engineering in Information and Communication Engineering
@@ -158,21 +174,18 @@ export default function HeroSection() {
 
 
             <p>
-              🔬 Research Areas: Artificial Intelligence, Deep Learning,
-              Computer Vision, Biomedical Imaging & Explainable AI
+              🔬 AI, Deep Learning, Computer Vision, Biomedical Imaging
             </p>
 
 
             <p>
-              📄 Research Publications: IEEE & Springer Platforms
+              📄 IEEE & Springer Research Publications
             </p>
 
 
             <p>
               👨‍🏫 ICT Instructor | Srizon Coaching Center
-              (2023 - Present)
             </p>
-
 
 
           </div>
@@ -181,16 +194,19 @@ export default function HeroSection() {
 
 
 
+
+
           <div
             className="
             flex
+            flex-col
+            sm:flex-row
             gap-4
             pt-5
             justify-center
             lg:justify-start
             "
           >
-
 
             <button
               className="
@@ -205,9 +221,10 @@ export default function HeroSection() {
               transition
               "
             >
-              Download CV
-            </button>
 
+              Download CV
+
+            </button>
 
 
 
@@ -224,16 +241,17 @@ export default function HeroSection() {
               transition
               "
             >
-              View Research
-            </button>
 
+              View Research
+
+            </button>
 
 
           </div>
 
 
-
         </div>
+
 
 
 
@@ -254,7 +272,9 @@ export default function HeroSection() {
         </div>
 
 
+
       </div>
+
 
 
 
@@ -266,7 +286,7 @@ export default function HeroSection() {
         className="
         relative
         z-10
-        mt-16
+        mt-12
         max-w-5xl
         w-full
         mx-auto
@@ -280,5 +300,6 @@ export default function HeroSection() {
 
 
     </section>
+
   );
 }

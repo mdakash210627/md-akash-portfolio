@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FileText } from "lucide-react";
+import { FileText, Menu } from "lucide-react";
 
 
 export default function Navbar() {
@@ -26,7 +26,8 @@ export default function Navbar() {
       left-0
       right-0
       z-50
-      px-6
+      px-4
+      sm:px-6
       "
     >
 
@@ -41,7 +42,8 @@ export default function Navbar() {
         bg-white/80
         backdrop-blur-xl
         shadow-lg
-        px-8
+        px-5
+        sm:px-8
         py-4
         flex
         items-center
@@ -55,10 +57,10 @@ export default function Navbar() {
         <Link
           href="/"
           className="
-          text-2xl
+          text-xl
+          sm:text-2xl
           font-bold
           text-gray-900
-          tracking-tight
           "
         >
 
@@ -73,7 +75,7 @@ export default function Navbar() {
 
 
 
-        {/* Menu */}
+        {/* Desktop Menu */}
 
         <div
           className="
@@ -93,36 +95,17 @@ export default function Navbar() {
                 key={item.name}
                 href={item.href}
                 className="
-                relative
-                transition
                 hover:text-blue-600
-                group
+                transition
                 "
               >
 
                 {item.name}
 
-
-                <span
-                  className="
-                  absolute
-                  left-0
-                  -bottom-2
-                  h-[2px]
-                  w-0
-                  bg-blue-600
-                  transition-all
-                  duration-300
-                  group-hover:w-full
-                  "
-                />
-
-
               </Link>
 
             ))
           }
-
 
         </div>
 
@@ -130,25 +113,42 @@ export default function Navbar() {
 
 
 
+        {/* Mobile Menu Icon */}
 
-        {/* CV Download Button */}
+        <button
+          className="
+          lg:hidden
+          text-gray-700
+          "
+        >
+
+          <Menu size={26}/>
+
+        </button>
+
+
+
+
+
+
+        {/* CV Button */}
 
         <a
           href="/documents/Akash_CV.pdf"
           download="Md_Akash_CV.pdf"
           className="
-          flex
+          hidden
+          sm:flex
           items-center
           gap-2
           rounded-full
           bg-blue-600
-          px-6
+          px-5
           py-2.5
           text-white
           font-medium
           shadow-md
           hover:bg-blue-700
-          hover:scale-105
           transition
           "
         >
